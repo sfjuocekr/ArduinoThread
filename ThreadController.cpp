@@ -69,7 +69,7 @@ void ThreadController::remove(int id){
 		if(thread[i]->ThreadID == id){
 			thread[i] = NULL;
 			cached_size--;
-			return;
+			break;
 		}
 	}
 }
